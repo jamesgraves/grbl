@@ -3,22 +3,24 @@ Original hardware connections:
 
 Limit switches:
 
-Port 8
+MB jack 8
 X limit switch
 A0
+port c 0
 
-Port 7
+MB jack 7
 Y limit switch
 A1
+port c 1
 
 
-Port 3
+MB jack 3
 X stepper
 D12 direction
 D13 pulse
 
 
-Port 4
+MB jack 4
 Y stepper
 D2 pulse
 D8 direction
@@ -28,3 +30,26 @@ PWM
 M2 + / -
 D4 Clock-wise / CCW
 D5 on / short brake
+
+
+
+
+New pinout for grbl:
+
+MB jack 8
+X limit switch
+A0 (port c 0)
+
+MB jack 7
+Y limit switch
+A1 (port c 1)
+
+MB jack 3
+X stepper
+D12 direction (port b 4)
+D13 pulse (port b 5)
+
+MB jack ???
+Y stepper
+D11 direction (port b 3)
+D10 pulse (port b 2)
