@@ -1,0 +1,30 @@
+
+Original hardware connections:
+
+Limit switches:
+
+Port 8
+X limit switch
+A0
+
+Port 7
+Y limit switch
+A1
+
+
+Port 3
+X stepper
+D12 direction
+D13 pulse
+
+
+Port 4
+Y stepper
+D2 pulse
+D8 direction
+
+Pen down
+PWM
+M2 + / -
+D4 Clock-wise / CCW
+D5 on / short brake
