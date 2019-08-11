@@ -54,3 +54,12 @@ Y stepper
 D11 direction (port b 3)
 D10 pulse (port b 2)
 Note: Need alternate connection for +5V, don't use port!
+
+Pen down
+PWM
+M1 + / -
+D7 Clock-wise / CCW
+D6 on / short brake
+
+max X travel 390mm
+max Y travel 320mm
