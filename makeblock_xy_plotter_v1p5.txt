@@ -55,11 +55,19 @@ D11 direction (port b 3)
 D10 pulse (port b 2)
 Note: Need alternate connection for +5V, don't use port!
 
+X axis
+top-attached to carriage
+facing the stepper, CCW is positive dir, going to home position
+
+Y axis
+facing the stepper, CCW is negative dir, going to home position
+
+max X travel 390mm
+max Y travel 320mm
+
 Pen down
 PWM
 M1 + / -
 D7 Clock-wise / CCW
 D6 on / short brake
 
-max X travel 390mm
-max Y travel 320mm
