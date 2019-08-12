@@ -53,7 +53,7 @@ MB jack 1
 Y stepper
 D11 direction (port b 3)
 D10 pulse (port b 2)
-Note: Need alternate connection for +5V, don't use port!
+Note: Need alternate connection for +5V, don't use port, that is +12V!
 
 X axis
 top-attached to carriage
@@ -66,8 +66,10 @@ max X travel 390mm
 max Y travel 320mm
 
 Pen down
-PWM
+PWM needed
+Set spindle speed to max needed to hold pen in down position, more
+than that will cause solenoid to heat up unnecessarily.
 M1 + / -
 D7 Clock-wise / CCW
-D6 on / short brake
+D6 on / short brake - PWM
 
