@@ -317,7 +317,7 @@
   #define PROBE_DDR       DDRD
   #define PROBE_PIN       PIND
   #define PROBE_PORT      PORTD
-  #define PROBE_BIT       7  // Uno Digital Pin 7
+  #define PROBE_BIT       2  // Uno Digital Pin 2
   #define PROBE_MASK      (1<<PROBE_BIT)
 
     // Define flood and mist coolant enable output pins.
