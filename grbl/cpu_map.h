@@ -326,7 +326,7 @@
     #define COOLANT_FLOOD_BIT   3  // Uno Digital Pin 3
     #define COOLANT_MIST_DDR   DDRD
     #define COOLANT_MIST_PORT  PORTD
-    #define COOLANT_MIST_BIT   3  // Uno Digital Pin 4
+    #define COOLANT_MIST_BIT   3  // Uno Digital Pin 3
 
     // Define spindle enable and spindle direction output pins.
     #define SPINDLE_ENABLE_DDR    DDRD
@@ -362,11 +362,11 @@
     #define SPINDLE_COMB_BIT          COM0A1
 
     // Prescaled, 8-bit Fast PWM mode.
-    #define SPINDLE_TCCRA_INIT_MASK   ((1<<WGM20) | (1<<WGM21))  // Configures fast PWM mode.
+    #define SPINDLE_TCCRA_INIT_MASK   ((1<<WGM00) | (1<<WGM01))  // Configures fast PWM mode.
     // #define SPINDLE_TCCRB_INIT_MASK   (1<<CS20)               // Disable prescaler -> 62.5kHz
     // #define SPINDLE_TCCRB_INIT_MASK   (1<<CS21)               // 1/8 prescaler -> 7.8kHz (Used in v0.9)
     // #define SPINDLE_TCCRB_INIT_MASK   ((1<<CS21) | (1<<CS20)) // 1/32 prescaler -> 1.96kHz
-    #define SPINDLE_TCCRB_INIT_MASK      (1<<CS22)               // 1/64 prescaler -> 0.98kHz (J-tech laser)
+    #define SPINDLE_TCCRB_INIT_MASK      (1<<CS02)               // 1/64 prescaler -> 0.98kHz (J-tech laser)
 
     // NOTE: On the 328p, these must be the same as the SPINDLE_ENABLE settings.
     #define SPINDLE_PWM_DDR   DDRD
