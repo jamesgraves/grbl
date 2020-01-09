@@ -1,3 +1,17 @@
+This is an adaptation of GRBL to a Makeblock XY plotter (version 1... sort of).
+
+The main issues faced are that the IO pin assignments on the Makeblock Orion board
+limit how the stepper motors and pen function (using PWM motor control) may be
+hooked up.
+
+And in fact, it was necessary to move around some functions to get everything to
+work.  This needs to be documented better, but a rough outline is listed below.
+
+The Makeblock XY plotter was modified to work better with GRBL, in particular where
+the limit switches were placed.
+
+The X and Y mm per step settings are drastically different because different sized
+timing belt pulleys were used on the X and on the Y.
 
 Original hardware connections:
 
